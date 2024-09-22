@@ -14,6 +14,7 @@ import java.time.Duration;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
+
 public class Zadanie {
     public WebDriver driver;
 
@@ -58,19 +59,9 @@ public class Zadanie {
         WebElement chceckoutTwo = this.driver.findElement(By.xpath("/html/body/main/section/div/div/section/div/div[2]/div[1]/div[2]/div/a"));
         chceckoutTwo.click();
 
-        WebElement putStreet = this.driver.findElement(By.xpath("/html/body/main/section/div/div/section/div/div[1]/section[2]/div/div/form/div/div/section/div[6]/div[1]/input"));
-        putStreet.sendKeys("ulica");
-
-        WebElement putCity = this.driver.findElement(By.xpath("/html/body/main/section/div/div/section/div/div[1]/section[2]/div/div/form/div/div/section/div[8]/div[1]/input"));
-        putCity.sendKeys("Miasto");
-
-        WebElement putPostalCode = this.driver.findElement(By.xpath("/html/body/main/section/div/div/section/div/div[1]/section[2]/div/div/form/div/div/section/div[9]/div[1]/input"));
-        putPostalCode.sendKeys("00-000");
-
-
-
         WebElement confirmAddress = this.driver.findElement(By.name("confirm-addresses"));
         confirmAddress.click();
+
         WebElement confirmDeliveryOption = this.driver.findElement(By.name("confirmDeliveryOption"));
         confirmDeliveryOption.click();
         WebElement paymentOption = this.driver.findElement(By.xpath("/html/body/main/section/div/div/section/div/div[1]/section[4]/div/div[2]/div[1]/div/span/input"));
